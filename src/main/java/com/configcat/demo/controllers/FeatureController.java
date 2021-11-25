@@ -24,9 +24,9 @@ public class FeatureController {
         boolean isMyAwesomeFeatureEnabled = client.getValue(Boolean.class, "isMyFirstFeatureEnabled", false);
 
         if(isMyAwesomeFeatureEnabled) {
-            return "There's a 20% of being ON and 80% of being OFF: \n You were lucky.";
+            return "You were lucky.";
         } else {
-            return "There's a 20% of being ON and 80% of being OFF: \n Bad luck, try again.";
+            return "Bad luck, try again.";
         }
     }
 }
